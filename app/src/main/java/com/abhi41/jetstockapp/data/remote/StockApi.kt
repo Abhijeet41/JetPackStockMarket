@@ -7,7 +7,7 @@ import retrofit2.http.Query
 interface StockApi {
     @GET("query?function=LISTING_STATUS")
     suspend fun getListing(
-        @Query("apikey") apikey: String
+        @Query("apikey") apikey: String = API_KEY
     ):ResponseBody  //this is for download csv file
 
     companion object{
