@@ -2,6 +2,6 @@ package com.abhi41.jetstockapp.data.csv
 
 import java.io.InputStream
 
-interface CSVParse<T> {
+interface CSVParser<T> {
     suspend fun  parse(stream: InputStream): List<T>
 }

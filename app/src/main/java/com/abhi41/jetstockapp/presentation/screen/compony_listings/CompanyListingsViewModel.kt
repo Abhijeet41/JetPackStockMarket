@@ -16,17 +16,21 @@ import javax.inject.Inject
 @HiltViewModel
 class CompanyListingsViewModel @Inject constructor(
     private val repository: StockRepository
-) :ViewModel() {
+) : ViewModel() {
 
     var state by mutableStateOf(CompanyListingState())
     private var searchJob: Job? = null
 
-    fun onEvent(event: CompanyListingsEvent){
-        when(event){
-            is CompanyListingsEvent.Refresh ->{
+    init {
+        getCompanyListings()
+    }
+
+    fun onEvent(event: CompanyListingsEvent) {
+        when (event) {
+            is CompanyListingsEvent.Refresh -> {
                 getCompanyListings(fetchFromRemote = true)
             }
-            is CompanyListingsEvent.OnSearchQueryChange ->{
+            is CompanyListingsEvent.OnSearchQueryChange -> {
                 state = state.copy(searchQuery = event.query)
                 searchJob?.cancel()
                 searchJob = viewModelScope.launch {
@@ -37,14 +41,14 @@ class CompanyListingsViewModel @Inject constructor(
         }
     }
 
-   private fun getCompanyListings(
+    private fun getCompanyListings(
         query: String = state.searchQuery.lowercase(),
-        fetchFromRemote:Boolean = false
-    ){
+        fetchFromRemote: Boolean = false
+    ) {
         viewModelScope.launch {
             repository.getCompanyListings(fetchFromRemote, query)
-                .collect{ result->
-                    when(result){
+                .collect { result ->
+                    when (result) {
                         is Resource.Success -> {
                             result.data?.let { listings ->
                                 state = state.copy(
@@ -52,10 +56,10 @@ class CompanyListingsViewModel @Inject constructor(
                                 )
                             }
                         }
-                        is Resource.Error ->{
+                        is Resource.Error -> {
                             Unit
                         }
-                        is Resource.Loading ->{
+                        is Resource.Loading -> {
                             state = state.copy(isLoading = result.isLoading)
                         }
                     }

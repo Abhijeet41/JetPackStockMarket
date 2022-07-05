@@ -11,7 +11,7 @@ import javax.inject.Inject
 
 class CompanyListingsParser @Inject constructor(
 
-) : CSVParse<CompanyListing> {
+) : CSVParser<CompanyListing> {
 
     override suspend fun parse(stream: InputStream): List<CompanyListing> {
         val csvReader = CSVReader(InputStreamReader(stream))
