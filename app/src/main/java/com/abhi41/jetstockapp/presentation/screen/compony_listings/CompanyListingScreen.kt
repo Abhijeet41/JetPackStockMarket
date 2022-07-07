@@ -53,7 +53,7 @@ fun CompanyListingScreen(
                 modifier = Modifier.fillMaxSize()
             ) {
                 items(state.companies.size) { i ->
-                    if (i < state.companies.size) {
+                    if (i < state.companies.size) {//we do this bcause divider should not displayed on last item
                         val company = state.companies[i]
                         CompanyItem(
                             company = company,

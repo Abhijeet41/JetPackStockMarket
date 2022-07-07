@@ -8,6 +8,51 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/common/RecipesListContent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/detailScreen/DetailViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/favoriteScreen/FavoriteScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/favoriteScreen/FavoriteScreenAppbar.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/favoriteScreen/FavoriteState.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/foodJoke/FoodJokeScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/foodJoke/FoodJokeViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/searchScreen/SearchScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/searchScreen/SearchViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/build.gradle">
           <value>
             <set />
@@ -159,6 +204,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetstockapp/domain/repository/StockRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetstockapp/presentation/screen/compony_info/CompanyInfoState.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetstockapp/presentation/screen/compony_info/CompanyInfoViewModel.kt">
           <value>
             <set />
           </value>

@@ -4,7 +4,6 @@ import com.abhi41.jetstockapp.data.csv.CSVParser
 import com.abhi41.jetstockapp.data.csv.CompanyListingsParser
 import com.abhi41.jetstockapp.data.csv.IntradayInfoParser
 import com.abhi41.jetstockapp.data.remote.dto.CompanyListing
-import com.abhi41.jetstockapp.data.repository.StockRepositoryImpl
 import com.abhi41.jetstockapp.domain.model.IntradayInfo
 import com.abhi41.jetstockapp.domain.repository.StockRepository
 import dagger.Binds

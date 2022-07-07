@@ -100,12 +100,12 @@ class StockRepositoryImpl @Inject constructor(
         try {
             val result = api.getCompanyInfo(symbol = symbol)
             return Resource.Success(result.toCompanyInfo())
-        }catch (e: IOException) {
+        } catch (e: IOException) {
             e.printStackTrace()
-           return Resource.Error("Could't load company info")
+            return Resource.Error("Could't load company info")
         } catch (e: HttpException) {
             e.printStackTrace()
-          return  Resource.Error("Could't load company info")
+            return Resource.Error("Could't load company info")
         }
     }
 
